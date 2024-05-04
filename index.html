@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        ul,li {
+         list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .main__banner {
+            background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+        }
+    </style>
+</head>
+<body>
+ 
+    <header class="w-full fixed top-0 left-0 z-[100] max-lg:bg-[#80D0C7] transition-colors duration-200" id="header">
+
+        <nav class="max-w-[1200px] mx-auto w-[90%] h-[5rem] flex justify-between items-center relative z-[100]">
+
+            <!-- logo -->
+            <div class="">
+                <div class="flex items-center space-x-2">
+                    <img class="w-12" src="./asset/img/logo.png" alt="">
+                    <h2 class="text-4xl font-bold">Topic</h2>
+                </div>
+            </div>
+
+            <!-- menu -->
+            <div class="fixed top-[-100%] left-0 w-full h-[50%] pt-10 bg-[#80D0C7] text-start px-10 z-40 max-lg:transition-all max-lg:duration-500 lg:static lg:bg-transparent lg:px-0 lg:top-0 lg:pt-0 lg:w-auto lg:h-full lg:flex lg:items-center" id="nav-menu">
+                <ul class="space-y-5 text-sm lg:flex lg:space-y-0 lg:space-x-12 lg:items-center">
+                    <li class="text-[#13547a]">
+                        <a href="">HOME</a>
+                    </li>
+                    <li class="text-white hover:text-[#13547a] transition-all duration-200">
+                        <a href="">BROWSE TOPICS</a>
+                    </li>
+                    <li class="text-white hover:text-[#13547a] transition-all duration-200">
+                        <a href="">HOW IT WORK</a>
+                    </li>
+                    <li class="text-white hover:text-[#13547a] transition-all duration-200">
+                        <a href="">FAQS</a>
+                    </li>
+                    <li class="text-white hover:text-[#13547a] transition-all duration-200">
+                        <a href="">CONRACT</a>
+                    </li>
+                    <li class="text-white hover:text-[#13547a] transition-all duration-200">
+                        <a href="">PAGES</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="text-xl flex items-center space-x-5">
+                <div class="size-11 bg-white rounded-full grid place-items-center hover:bg-[#13547A] hover:text-white transition-all duration-300">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+
+                <!-- nav toggle -->
+                <div class="lg:hidden" id="nav-toggle">
+                    <i id="hamburger" class="fa-solid fa-bars text-2xl text-white transition-all duration-300"></i>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Main banner -->
+    <div class="main__banner pt-[150px] pb-[150px]">
+        <div class="text-center">
+            <div class="font-bold">
+                <h1 class="text-6xl text-white max-sm:text-3xl">Discover. Learn. Enjoy</h1>
+                <p class="text-[#13547A] font-semibold text-2xl mt-3 max-sm:text-sm">platform for creatives around the world</p>
+            </div>
+
+            <div class="flex items-center bg-white rounded-full w-[50%] space-x-5 mx-auto p-3 ps-4 mt-6 max-md:w-[80%] max-sm:w-[90%]">
+                <div class="">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                </div>
+                <div class="w-full">
+                    <input class="w-full text-lg outline-none" placeholder="Design, Code, Marketing, Finance ..." type="text">
+                </div>
+                    <div class="bg-[#80D0C7] text-white text-xl font-semibold px-8 py-3 rounded-full">
+                        <p>Search</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#80d0c7] rounded-es-[100px] rounded-ee-[100px]">
+        <div class="grid grid-cols-5 px-[10rem] max-lg:px-[8rem] max-md:px-[3rem] max-sm:px-[1.5rem] gap-8 relative top-[-5rem]">
+            <div class="p-8 col-span-2 max-lg:col-span-full rounded-3xl border-black bg-white ">
+                <div class="flex">
+                    <div class="">
+                        <h3 class="text-2xl font-semibold">Web Design</h3>
+                    <p class="text-lg text-gray-500">When you search for free CSS templates, you will notice that TemplateMo is one of the best websites.</p>
+                    </div>
+                    <div class="bg-blue-400 text-white h-fit px-2 py-1 rounded-md">
+                        <p>14</p>
+                    </div>
+                </div>
+                <div class="max-lg:w-3/4 mx-auto object-cover">
+                    <img src="https://templatemo.com/templates/templatemo_590_topic_listing/images/topics/undraw_Remote_design_team_re_urdx.png" alt="">
+                </div>
+            </div>
+
+            <div class="p-3 col-span-3 max-lg:col-span-full rounded-3xl bg-cover bg-no-repeat bg-center bg-[url(https://templatemo.com/templates/templatemo_590_topic_listing/images/businesswoman-using-tablet-analysis.jpg)]">
+                <div class="bg-black/10 p-5 text-white backdrop-blur-md rounded-3xl h-full w-full">
+                    <div class="flex">
+                        <div class="">
+                            <h3 class="font-semibold text-xl">Finance</h3>
+                            <p class="text-lg
+                            ">Topic Listing Template includes homepage, listing page, detail page, and contact page. You can feel free to edit and adapt for your CMS requirements.</p>
+                        </div>
+                        <div class="px-2 py-1 rounded-md bg-blue-400 h-fit">
+                            <p>25</p>
+                        </div>
+                    </div>
+
+                    <div class="px-6 py-3 bg-[#80D0C7] w-fit rounded-full mt-7 border hover:bg-[#13547A] transition-all duration-300 font-bold">
+                        <p>Learn More</p>
+                    </div>
+
+                    <div class="max-sm:hidden">
+                            <div class="flex justify-between items-center text-2xl w-full p-3 mt-[7rem]">
+                                <div class="flex items-center space-x-4">
+                                <h3 class="text-xl">Share:</h3>
+                                <div class="px-2 py-1 rounded-full bg-[#80D0C7] hover:bg-[#13547A] transition-all duration-300">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="px-2 py-1 rounded-full bg-[#80D0C7] hover:bg-[#13547A] transition-all duration-300">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </div>
+                                <div class="px-2 py-1 rounded-full bg-[#80D0C7] hover:bg-[#13547A] transition-all duration-300">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </div>
+                            </div>
+                            <div class="">
+                                <i class="fa-regular fa-bookmark hover:text-[#13547A] transition-all duration-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-14">
+        <div class="text-center font-bold text-4xl">
+            <h3>Browse Topics</h3>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-center space-x-5 mt-8 border-b lg:space-x-12 text-lg max-[405px]:space-y-3">
+            <div class="border-b-2 border-[#13547a] pb-2 transition-all duration-300">
+                <p class="text-[#13547a]">Design</p>
+            </div>
+            <div class=" group-hover:text-[#13547a] hover:border-b-2 border-[#13547a] pb-2 transition-all duration-300">
+                <p class="transition-all duration-300">Marketing</p>
+            </div>
+            <div class=" group-hover:text-[#13547a] hover:border-b-2 border-[#13547a] pb-2 transition-all duration-300">
+                <p class="transition-all duration-300">Finance</p>
+            </div>
+            <div class=" group-hover:text-[#13547a] hover:border-b-2 border-[#13547a] pb-2 transition-all duration-300">
+                <p class="transition-all duration-300">Music</p>
+            </div>
+            <div class=" group-hover:text-[#13547a] hover:border-b-2 border-[#13547a] pb-2 transition-all duration-300">
+                <p class="transition-all duration-300">Education</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-6 px-[8rem] mt-6 gap-5 max-lg:px-[4rem] max-md:px-[1.5rem]">
+          
+            <div class="col-span-2 max-lg:col-span-3 max-md:col-span-6 border p-8 rounded-3xl shadow-2xl">
+                <div class="flex justify-center ">
+                    <div class="">
+                        <h3 class="font-semibold text-xl">Web Design</h3>
+                        <p class="text-lg">Topic Listing Template based on Bootstrap 5</p>
+                    </div>
+                    <div class="px-2 py-1 bg-blue-400 text-white h-fit rounded-md">
+                        <p>14</p>
+                    </div>
+                </div>
+                <div class="w-full h-[10rem] mt-5">
+                    <img class="w-full h-full object-cover" src="https://templatemo.com/templates/templatemo_590_topic_listing/images/topics/undraw_Remote_design_team_re_urdx.png" alt="">
+                </div>
+            </div>
+          
+            <div class="col-span-2 max-lg:col-span-3 max-md:col-span-6 border p-8 rounded-3xl shadow-2xl">
+                <div class="flex justify-center ">
+                    <div class="">
+                        <h3 class="font-semibold text-xl">Graphic</h3>
+                        <p class="text-lg">Lorem Ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="px-2 py-1 bg-blue-400 text-white h-fit rounded-md">
+                        <p>14</p>
+                    </div>
+                </div>
+                <div class="w-full h-[10rem] mt-5">
+                    <img class="w-full h-full object-cover" src="https://templatemo.com/templates/templatemo_590_topic_listing/images/topics/undraw_Redesign_feedback_re_jvm0.png" alt="">
+                </div>
+            </div>
+          
+            <div class="col-span-2 max-lg:col-span-3 max-md:col-span-6 border p-8 rounded-3xl shadow-2xl">
+                <div class="flex justify-center ">
+                    <div class="">
+                        <h3 class="font-semibold text-xl">Logo Design</h3>
+                        <p class="text-lg">Lorem Ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="px-2 py-1 bg-blue-400 text-white h-fit rounded-md">
+                        <p>14</p>
+                    </div>
+                </div>
+                <div class="w-full h-[10rem] mt-5">
+                    <img class="w-full h-full object-contain" src="https://templatemo.com/templates/templatemo_590_topic_listing/images/topics/colleagues-working-cozy-office-medium-shot.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="bg-[url(https://templatemo.com/templates/templatemo_590_topic_listing/images/colleagues-working-cozy-office-medium-shot.jpg)] bg-no-repeat bg-center relative bg-cover min-h-[30rem] w-full mt-20">
+        <div class="bg-gradient-to-r from-[#13547a] to-[#80d0c7] absolute top-0 left-0 w-full h-full opacity-[0.85]"></div>
+        <div class="z-20 relative text-white pt-12 px-48 max-[1110px]:px-32 max-lg:px-24 max-[960px]:px-12 max-[860px]:px-4 pb-14">
+            <div class="text-center text-4xl font-bold">
+                <h2>How does it work?</h2>
+            </div>
+    
+            <div class="flex space-x-10 mt-8">
+                <div class="relative">
+                    <div class="border px-3 py-3 rounded-full bg-[#80D0C7] z-30 relative">
+                        <div class="border-4 border-white rounded-full px-5 py-4">
+                            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bg-[#80D0C7] h-[180%] top-0 left-[50%] translate-x-[-50%] z-10">s</div>
+                </div>
+                <div class="">
+                    <h3 class="text-2xl">Search your favourite topic</h3>
+                    <p class="mt-4 leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, cumque magnam? Sequi, cupiditate quibusdam alias illum sed esse ad dignissimos libero sunt, quisquam numquam aliquam? Voluptas, accusamus omnis?</p>
+                </div>
+            </div>
+    
+            <div class="flex space-x-10 mt-24 max-[511px]:mt-10">
+                <div class="relative">
+                    <div class="border px-3 py-3 rounded-full bg-[#80D0C7] z-30 relative">
+                        <div class="border-4 border-white rounded-full px-6 py-4">
+                            <i class="fa-regular fa-bookmark text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bg-[#80D0C7] h-[170%] max-[540px]:h-[140%] max-[400px]:h-[120%] top-0 left-[50%] translate-x-[-50%] z-10">s</div>
+                </div>
+                <div class="">
+                    <h3 class="text-2xl">Bookmark & Keep it for yourself</h3>
+                    <p class="mt-4 leading-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint animi necessitatibus aperiam repudiandae nam omnis est vel quo, nihil repellat quia velit error modi earum similique odit labore. Doloremque, repudiandae?</p>
+                </div>
+            </div>
+    
+            <div class="flex space-x-10 mt-24 max-[511px]:mt-10">
+                <div class="relative">
+                    <div class="border px-3 py-3 rounded-full bg-[#80D0C7] z-30 relative">
+                        <div class="border-4 border-white rounded-full px-6 py-4">
+                            <i class="fa-solid fa-book text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-2xl">Read & Enjoy</h3>
+                    <p class="mt-4 leading-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi vero quisquam, rem assumenda similique voluptas distinctio, iste est hic eveniet debitis ut ducimus beatae id? Quam culpa deleniti officiis autem?</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center text-center space-x-5 mt-16">
+                <p>Want to learn more?</p>
+                <div class="border-2 border-[#7cc9cd] text-[#7cc9cd] font-bold rounded-full px-4 py-2 hover:bg-[#7cc9cd] hover:text-white transition-all duration-300">
+                    <p>Check out youtube</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-full">
+        <div class="">
+            <h2 class="text-5xl font-bold text-black pt-20 px-20 max-sm:text-2xl max-lg:px-5 max-sm:pt-10">Frequently Asked <br> Questions</h2>
+        </div>
+
+        <div class="grid grid-cols-2 max-lg:grid-cols-1 place-items-center space-x-10 max-sm:space-x-0">
+            <div class="col-span-1 p-20 max-lg:p-5">
+                <img src="https://templatemo.com/templates/templatemo_590_topic_listing/images/faq_graphic.jpg" alt="">
+            </div>
+            <div class="col-span-1 w-full flex flex-col max-lg:items-center">
+                <div class="flex items-center w-[70%] justify-between p-3 rounded-full">
+                    <p class="text-2xl max-sm:text-xl font-semibold">What is Topic Listing?</p>
+                    <i class="fa-solid fa-chevron-down text-xl"></i>
+                </div>
+                <div class="flex items-center w-[70%] justify-between p-3 rounded-full">
+                    <p class="text-2xl max-sm:text-xl font-semibold">How to find a topic?</p>
+                    <i class="fa-solid fa-chevron-down text-xl"></i>
+                </div>
+                <div class="flex items-center w-[70%] justify-between p-3 rounded-full">
+                    <p class="text-2xl max-sm:text-xl font-semibold">Does it need to paid?</p>
+                    <i class="fa-solid fa-chevron-down text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#F0F8FF] px-24 py-24 max-lg:px-24 max-sm:px-8">
+        <h3 class="text-5xl font-bold text-center max-sm:text-3xl">Get in touch</h3>
+        <div class="grid grid-cols-7 gap-10 mt-12 max-lg:grid-cols-2 max-sm:grid-cols-1">
+            <div class="col-span-3 max-lg:col-span-2 max-sm:col-span-1 rounded-3xl overflow-hidden">
+                <img src="https://usefulmaps.in.th/wp-content/uploads/2020/06/icon-landmark2-WatArun-1024x576.jpg">
+            </div>
+            <div class="col-span-2 max-lg:col-span-1 max-sm:col-span-1">
+                <h4 class="font-semibold text-2xl">Head office</h4>
+                <p class="mt-3 text-lg">Bay St &, Larkin St, San Francisco, CA 94109, United States</p>
+                <hr class="my-4">
+                <div class="flex items-center space-x-4">
+                    <p class="text-lg">Phone</p>
+                    <p class="text-lg text-gray-400">305-240-9671</p>
+                </div>
+                <div class="flex items-center space-x-4 mt-1">
+                    <p class="text-lg">Email</p>
+                    <p class="text-lg text-gray-400">info@company.com</p>
+                </div>
+            </div>
+            <div class="col-span-2 max-lg:col-span-1 max-sm:col-span-1">
+                <div class="">
+                    <h4 class="font-semibold text-2xl">Dubai office</h4>
+                <p class="mt-3 text-lg">Burj Park, Downtown Dubai, United Arab Emirates</p>
+                <hr class="my-4">
+                <div class="flex items-center space-x-4">
+                    <p class="text-lg">Phone</p>
+                    <p class="text-lg text-gray-400">110-220-3400</p>
+                </div>
+                <div class="flex items-center space-x-4 mt-1">
+                    <p class="text-lg">Email</p>
+                    <p class="text-lg text-gray-400">info@company.com</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-24 pt-14 pb-24 max-lg:px-16 max-sm:px-4 max-sm:pt-14 relative">
+        <div class="grid grid-cols-4 max-lg:grid-cols-6 gap-10">
+            <div class="max-lg:col-span-full">
+                <div class="flex items-center space-x-2">
+                    <img class="w-12" src="./asset/img/logo.png" alt="">
+                    <h2 class="text-4xl font-bold">Topic</h2>
+                </div>
+            </div>
+            <div class="max-lg:col-span-2 max-sm:col-span-3">
+                <h4 class="text-[#13547a] text-xl font-semibold">Resources</h4>
+                <p class="text-sm text-gray-400 mt-3">Home</p>
+                <p class="text-sm text-gray-400 mt-1">How it works</p>
+                <p class="text-sm text-gray-400 mt-1">FAQs</p>
+                <p class="text-sm text-gray-400 mt-1">Contact</p>
+            </div>
+            <div class="max-lg:col-span-2 max-sm:col-span-3">
+                <h4 class="text-[#13547a] text-xl font-semibold">Information</h4>
+                <p class="text-sm text-gray-400 mt-3">305-240-9671</p>
+                <p class="text-sm text-gray-400 mt-1">info@company.com</p>
+            </div>
+            <div class="max-lg:col-span-2 max-sm:col-span-4">
+                <div class="px-4 py-2 bg-[#80d0c7] text-white w-fit rounded-md">
+                    <p>English <i class="fa-solid fa-caret-down ml-1"></i></p>
+                </div>
+                <div class="mt-10 max-sm:mt-4">
+                    <p>Copyright © 2048 Topic Listing Center. All rights reserved.</p>
+                </div>
+                <div class="mt-3">
+                    <p>Design: Sign</p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute right-0 bottom-0 bg-[#80D0C7] w-full h-2 ">
+        <div class="absolute right-0 bottom-0 w-0 h-0 border-t-[10rem] border-t-[#80D0C7] border-r-[10rem] border-r-transparent border-b-[10rem] border-b-transparent rotate-180">
+
+        </div>
+    </div>
+
+    <script>
+
+        const navMenu = document.getElementById('nav-menu'),
+              navToggle = document.getElementById('nav-toggle'),
+              hamburger = document.getElementById('hamburger');
+
+              if(navToggle){
+                navToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle("top-20");
+                    navMenu.classList.toggle("top-[-100%]");
+
+                    hamburger.classList.toggle("fa-bars");
+                    hamburger.classList.toggle("fa-x");
+                });
+              }
+
+
+            const scrollHeader = () => {
+            const header = document.getElementById('header');
+
+            window.scrollY >= 50 ? header.classList.add('bg-[#80D0C7]')
+                               : header.classList.remove('bg-[#80D0C7]')
+                               
+        }
+        window.addEventListener('scroll', scrollHeader);
+    </script>
+
+</body>
+</html>
